@@ -19,6 +19,10 @@ public class SimpleTest {
             }
 
             browser.close();
+        }catch (Exception e) {
+            System.out.println("Exception during test execution:");
+            e.printStackTrace();
+            System.exit(1);
         }
     }
 }
