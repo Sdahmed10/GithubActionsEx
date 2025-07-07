@@ -24,4 +24,4 @@ jobs:
         run: mvn install
 
       - name: Run Playwright test
-        run: mvn exec:java -Dexec.mainClass="tests.SimpleTest" -Dexec.classpathScope=test
+        run: mvn exec:java -Dexec.mainClass="tests.SimpleTest"
