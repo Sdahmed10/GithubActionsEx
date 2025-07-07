@@ -23,8 +23,8 @@ jobs:
       - name: Install dependencies
         run: mvn install
 
-      - name: Installer les navigateurs Playwright
-        run: mvn playwright:install
+      - name: Lancer le test Playwright
+        run: mvn exec:java -Dexec.mainClass="tests.SimpleTest"
 
 
       - name: Run Playwright test
